@@ -1,0 +1,9 @@
+
+
+<suite name="Ecomm-regression">
+<test name="regression">
+<classes>
+<class name=""></class>
+</classes>
+</test>
+</suite>
