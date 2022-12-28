@@ -13,7 +13,7 @@ private static Properties property;
 	static {
 		
 		try {
-			File file = new File(".resources/TestData/DataProperty.properties");
+			File file = new File("./src/test/resources/TestData/DataProperty.properties");
 			FileInputStream input = new FileInputStream(file);
 			property = new Properties();
 			property.load(input);
@@ -24,8 +24,8 @@ private static Properties property;
 		
 	}
 	
-	public static String getData(String key) {
-		return property.getProperty(key);
+	public static String getData(String Key) {
+		return property.getProperty(Key);
 	}
 
 }
