@@ -12,23 +12,34 @@ public class CreaterLoginPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 		
-		@FindBy(name = "email")
+		@FindBy(xpath = "//div[@name='email']/input")
 		public WebElement Email;
 		
-		@FindBy(name = "passowrd")
+		@FindBy(xpath = "//div[@name='password']/input")
 		public WebElement passowrd;
 		
-		@FindBy(linkText = "")
+		@FindBy (linkText = "Forgot Password?")
+		public WebElement forgotPasswordLink;
+		
+		@FindBy(xpath = "//p[contains(text(), 'These credentials do not match our records.')]")
+		public WebElement InvalidErrorMessage;
+
+		@FindBy (xpath = "//button[text()='Login']")
 		public WebElement loginButton;
-		
-		@FindBy(xpath = "")
+
+		@FindBy (xpath = "//p[contains(text(), 'Copyright @')]")
 		public WebElement copyRightText;
+
+		@FindBy (xpath = "//h1[contains(text(), 'Simple Invoicing for')]")
+		public WebElement businessTagline;
+
+		@FindBy (xpath = "//p[contains(text(), 'Crater helps you track expenses')]")
+		public WebElement businessSubtext;
+
+		@FindBy (xpath = "//p[contains(text(), 'These credentials do not match our records.')]")
+		public WebElement invalidUserErrorMessage;
 		
-		@FindBy(xpath = "")
-		public WebElement businessTagLine;
 		
-		@FindBy(xpath = "")
-		public WebElement businesssubText;
 		
 	
 
