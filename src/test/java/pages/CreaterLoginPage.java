@@ -1,10 +1,13 @@
 package pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utils.Driver;
+import utils.PropertiesReader;
 
 public class CreaterLoginPage {
 	
@@ -12,23 +15,32 @@ public class CreaterLoginPage {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 		
-		@FindBy(name = "email")
+		@FindBy(xpath = "//input[@name='email']")
 		public WebElement Email;
 		
-		@FindBy(name = "passowrd")
+		@FindBy(xpath = "//input[@name='password']")
 		public WebElement passowrd;
 		
-		@FindBy(linkText = "")
+		@FindBy(xpath = "//button[text()='Login']")
 		public WebElement loginButton;
 		
-		@FindBy(xpath = "")
-		public WebElement copyRightText;
+		@FindBy(xpath = "//span[text()='Amount Due']")
+		public WebElement amountdueText;
 		
-		@FindBy(xpath = "")
-		public WebElement businessTagLine;
+		@FindBy(xpath = "//p[contains(text(), 'These credentials do not match our records.')]")
+		public WebElement invalidUserErrorMessage;
 		
-		@FindBy(xpath = "")
-		public WebElement businesssubText;
+		@FindBy(xpath = "//span[text()='Field is required']")
+		public WebElement FieldrequiredError;
+	
+		
+		public void login () {
+			Email.sendKeys(PropertiesReader.getData("validEmail"));;
+			passowrd.sendKeys(PropertiesReader.getData("passowrd"));
+			loginButton.click();
+		}
+		
+		
 		
 	
 

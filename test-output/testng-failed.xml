@@ -5,8 +5,13 @@
     <classes>
       <class name="apiRestAssured.PetStoreApiTest">
         <methods>
+          <include name="deletThePet"/>
+          <include name="getPetByIdResponse"/>
+          <include name="chainValidation"/>
+          <include name="updateCat"/>
           <include name="creatCatWithJsonFile"/>
           <include name="setup"/>
+          <include name="postCat"/>
           <include name="cleanUP"/>
         </methods>
       </class> <!-- apiRestAssured.PetStoreApiTest -->
