@@ -1,5 +1,6 @@
 package tests;
 
+<<<<<<< HEAD
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
@@ -9,11 +10,17 @@ import org.testng.annotations.Test;
 
 import pages.CraterItemsElementsPage;
 import pages.CreaterLoginPage;
+=======
+import org.testng.annotations.Test;
+
+import pages.CraterCommonboardPage;
+>>>>>>> 3d6877741b0a80ecbb69247d156777f9336d8be1
 import utils.Driver;
 import utils.PropertiesReader;
 
 public class CraterItemsTest {
 	
+<<<<<<< HEAD
 	CraterItemsElementsPage itemsPage;
 	CreaterLoginPage  craterLoginElements;
 	/*
@@ -46,10 +53,30 @@ public class CraterItemsTest {
 		itemsPage.addItemUnitField.sendKeys("box");
 		itemsPage.addItemDescription.sendKeys("suitable for hard floors");
 		
+=======
+	CraterCommonboardPage  CraterElements;
+	
+	
+	@Test
+	public void creatItem() {
+		/*
+		 * Create an Estimate on UI.
+          Then go to database, and query from the items table using select * to get the information
+          Then verify the information that you have provided on UI is correct.
+          Then update your Estimate on the UI, come back to database and verify the update is in effect. 
+          Then delete the Estimate on the UI, come back to database and verify the estimate no longer
+          exist.
+		 */
+		 CraterElements = new CraterCommonboardPage();
+		Driver.getDriver().get(PropertiesReader.getData("createrUrl"));
+		
+		CraterElements.ItemsIcon.click();
+>>>>>>> 3d6877741b0a80ecbb69247d156777f9336d8be1
 		
 		
 	}
 	
+<<<<<<< HEAD
 	@BeforeMethod
 	public void setup() {
 		Driver.getDriver().get(PropertiesReader.getData("craterUrl"));
@@ -69,4 +96,9 @@ public class CraterItemsTest {
 	}
 	
 
+=======
+	
+	
+	
+>>>>>>> 3d6877741b0a80ecbb69247d156777f9336d8be1
 }

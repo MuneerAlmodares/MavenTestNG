@@ -24,8 +24,8 @@ private static Properties property;
 		
 	}
 	
-	public static String getData(String key) {
-		return property.getProperty(key);
+	public static String getData(String Key) {
+		return property.getProperty(Key);
 	}
 
 }

@@ -16,8 +16,6 @@ import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 
 
 public class Driver {
-
-	
 	
 public static WebDriver driver;
 	

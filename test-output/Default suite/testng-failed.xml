@@ -3,8 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apiRestAssured.PetStoreApiTest">
+      <class name="tests.CraterTest">
         <methods>
+<<<<<<< HEAD
           <include name="deletThePet"/>
           <include name="getPetByIdResponse"/>
           <include name="chainValidation"/>
@@ -13,8 +14,13 @@
           <include name="setup"/>
           <include name="postCat"/>
           <include name="cleanUP"/>
+=======
+          <include name="validLogin"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+>>>>>>> 3d6877741b0a80ecbb69247d156777f9336d8be1
         </methods>
-      </class> <!-- apiRestAssured.PetStoreApiTest -->
+      </class> <!-- tests.CraterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
