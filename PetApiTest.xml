@@ -4,7 +4,7 @@
 <suite name="PetStoreAPI" parallel="methods" thread-count="1">
 	<test name="APITests">
 		<classes>
-			<class name="petStoreApiTests.PetStoreApiTests"></class>
+			<class name="apiRestAssured.PetStoreApiTest"></class>
 		</classes>
 	</test>
 </suite>

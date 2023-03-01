@@ -10,7 +10,7 @@
   <maven.compiler.target>11</maven.compiler.target>
   </properties>
   
-  <dependencies>
+ <dependencies>
   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -30,10 +30,6 @@
     <version>5.3.0</version>
 </dependency>
 
-
-
-
-
 <dependency>
 <!--for Microsoft documents-->
     <groupId>org.apache.poi</groupId> 
@@ -49,33 +45,13 @@
     <scope>test</scope>
 </dependency>
 
-<dependency>
-<<<<<<< HEAD
-			<groupId>com.oracle.database.jdbc</groupId>
-			<artifactId>ojdbc8</artifactId>
-			<version>21.1.0.0</version>
-		</dependency>
 
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.28</version>
-		</dependency>
-=======
-    <groupId>com.oracle.database.jdbc</groupId>
-    <artifactId>ojdbc8</artifactId>
-    <version>21.1.0.0</version>
-</dependency>
-
-<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>8.0.28</version>
-</dependency>
->>>>>>> 3d6877741b0a80ecbb69247d156777f9336d8be1
 
  
   </dependencies>
+
+
+ 
   
   <profiles>
 	<profile>
