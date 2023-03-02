@@ -55,7 +55,7 @@
   
   <profiles>
 	<profile>
-			<id>ApiTests</id>
+			<id>petApiTests</id>
 			<build>
 				<plugins>
 					<plugin>
